@@ -13,5 +13,6 @@ with DAG(
         task_id = 'send_email_task',
         to = 'bum8242@naver.com',
         subject = 'airflow 성공',
-        html_content= 'Airflow 작업 완료'
+        html_content= 'Airflow 작업 완료',
+        conn_id = 'smtp_default'
     )
