@@ -1,9 +1,8 @@
 FRUIT=$1
-if [$FRUIT == APPLE];then
-    echo "You selectec Apple!"
-elif [$FRUIT == ORANGE];then
-    echo "You selectec Orange!"
+if [ "$FRUIT" = "APPLE" ]; then
+    echo "You selected Apple!"
+elif [ "$FRUIT" = "ORANGE" ]; then
+    echo "You selected Orange!"
 else
-    echo "Yo selected other Fruit!"
-
+    echo "You selected other Fruit!"
 fi
